@@ -31,7 +31,7 @@ extra:
 
 # Configuration
 theme:
-  name: material
+  name: 'material'
   #custom_dir: mkdocs_alabaster
 
   # 404 page
