@@ -1,0 +1,600 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A docs test">
+      
+      
+      
+        <meta name="author" content="Michael Hausenblas">
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>Changelog - Test docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Test docs" class="md-header__button md-logo" aria-label="Test docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Test docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/mhausenblas/mkdocs-template/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mhausenblas/mkdocs-template
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Test docs" class="md-nav__button md-logo" aria-label="Test docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Test docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/mhausenblas/mkdocs-template/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mhausenblas/mkdocs-template
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v052" class="md-nav__link">
+    v0.5.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v051" class="md-nav__link">
+    v0.5.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v050" class="md-nav__link">
+    v0.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updated-task-check-tool-to-account-for-operations-based-handling" class="md-nav__link">
+    Updated task check tool to account for operations based handling.
+  </a>
+  
+    <nav class="md-nav" aria-label="Updated task check tool to account for operations based handling.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v049" class="md-nav__link">
+    v0.4.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v047" class="md-nav__link">
+    v0.4.7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v046" class="md-nav__link">
+    v0.4.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v045" class="md-nav__link">
+    v0.4.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v044" class="md-nav__link">
+    v0.4.4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v042" class="md-nav__link">
+    v0.4.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v041" class="md-nav__link">
+    v0.4.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v040" class="md-nav__link">
+    v0.4.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v033" class="md-nav__link">
+    v0.3.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v031" class="md-nav__link">
+    v0.3.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v030" class="md-nav__link">
+    v0.3.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v028" class="md-nav__link">
+    v0.2.8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v026" class="md-nav__link">
+    v0.2.6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v025" class="md-nav__link">
+    v0.2.5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v023" class="md-nav__link">
+    v0.2.3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v022" class="md-nav__link">
+    v0.2.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v021" class="md-nav__link">
+    v0.2.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v020" class="md-nav__link">
+    v0.2.0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v019" class="md-nav__link">
+    v0.1.9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v018" class="md-nav__link">
+    v0.1.8
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/mhausenblas/mkdocs-template/edit/master/docs/changelog.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="changelog">Changelog</h1>
+<h3 id="v052">v0.5.2</h3>
+<ul>
+<li>Updated copy tool to allow for non mirrored copy</li>
+<li>Updated task and task cancel tools to account for states Pending and Cancelling</li>
+</ul>
+<h3 id="v051">v0.5.1</h3>
+<ul>
+<li>Updated quota tool to handle GCP projects inside GEE</li>
+<li>Updated Folder size reporting</li>
+</ul>
+<h3 id="v050">v0.5.0</h3>
+<ul>
+<li>Updated to use earthengine-api&gt;= 0.1.222</li>
+<li>Copy and move tool improvements to facilitate cloud alpha support.</li>
+<li>
+<h2 id="updated-task-check-tool-to-account-for-operations-based-handling">Updated task check tool to account for operations based handling.</h2>
+</li>
+</ul>
+<h3 id="v049">v0.4.9</h3>
+<ul>
+<li>Fixed <a href="https://github.com/samapriya/gee_asset_manager_addon/issues/11">issue 11</a>.</li>
+<li>Updated to recent API calls based on Issue and general improvements</li>
+<li>Added auto version check from pypi.</li>
+</ul>
+<h3 id="v047">v0.4.7</h3>
+<ul>
+<li>Fixed issue with delete tool and shell call.</li>
+<li>Fixed issue with copy and move function for single collections</li>
+</ul>
+<h3 id="v046">v0.4.6</h3>
+<ul>
+<li>Now inclues asset_url and thumbnail_url for search.</li>
+<li>Formatting and general improvements.</li>
+</ul>
+<h3 id="v045">v0.4.5</h3>
+<ul>
+<li>Now inclues license in sdist</li>
+<li>Fixed issue with app2script tool and string and text parsing.</li>
+<li>Added readme and version tools.</li>
+<li>Added readme docs and deployed environment.</li>
+</ul>
+<h3 id="v044">v0.4.4</h3>
+<ul>
+<li>Removed git dependency and used urllib instead based on <a href="https://github.com/samapriya/gee_asset_manager_addon/issues/10">feedback</a></li>
+<li>Created conda forge release based on <a href="https://github.com/samapriya/gee_asset_manager_addon/issues/10">Issue 10</a></li>
+</ul>
+<h3 id="v042">v0.4.2</h3>
+<ul>
+<li>Fixed relative import issue for earthengine.</li>
+<li>Fixed image collection move tool to parse ee object type correctly as image_collection.</li>
+</ul>
+<h3 id="v041">v0.4.1</h3>
+<ul>
+<li>Made enhancement <a href="https://github.com/samapriya/gee_asset_manager_addon/issues/9">Issue 9</a>.</li>
+<li>Search tool now return earth engine asset snippet and start and end dates as JSON object.</li>
+<li>Removed pretty table dependency.</li>
+</ul>
+<h3 id="v040">v0.4.0</h3>
+<ul>
+<li>Improved quota tools to get all quota and asset counts.</li>
+<li>Added a search tool to search GEE catalog using keywords.</li>
+<li>Improved parsing for app to script tool.</li>
+<li>Detailed asset root for all root folders and recursively</li>
+<li>Cancel tasks now allows you to choose, running, ready or specific task ids.</li>
+<li>Assets copy and move now allows you to copy entire folders, collectiona and assets recursively</li>
+<li>Updated assets access tool</li>
+<li>Delete metadata allows you to delete metadata for existing collection.</li>
+<li>Overall general improvements and optimization.</li>
+</ul>
+<h3 id="v033">v0.3.3</h3>
+<ul>
+<li>General improvements</li>
+<li>Added tool to get underlying code from earthengine app</li>
+</ul>
+<h3 id="v031">v0.3.1</h3>
+<ul>
+<li>Updated list and asset size functions</li>
+<li>Updated function to generate earthengine asset report</li>
+<li>General optimization and improvements to distribution</li>
+<li>Better error handling</li>
+</ul>
+<h3 id="v030">v0.3.0</h3>
+<ul>
+<li>Removed upload function</li>
+<li>Upload handles by <a href="https://github.com/samapriya/geeup">geeup</a></li>
+<li>General optimization and improvements to distribution</li>
+<li>Better error handling</li>
+</ul>
+<h3 id="v028">v0.2.8</h3>
+<ul>
+<li>Uses poster for streaming upload more stable with memory issues and large files</li>
+<li>Poster dependency limits use to Py 2.7 will fix in the new version</li>
+</ul>
+<h3 id="v026">v0.2.6</h3>
+<ul>
+<li>Major improvement to move, batch copy, and task reporting</li>
+<li>Major improvements to access tool to allow users read/write permission to entire Folder/collection.</li>
+</ul>
+<h3 id="v025">v0.2.5</h3>
+<ul>
+<li>Handles bandnames during upload thanks to Lukasz for original upload code</li>
+<li>Removed manifest option, that can be handled by seperate tool (ppipe)</li>
+</ul>
+<h3 id="v023">v0.2.3</h3>
+<ul>
+<li>Removing the initialization loop error</li>
+</ul>
+<h3 id="v022">v0.2.2</h3>
+<ul>
+<li>Added improvement to earthengine authorization</li>
+</ul>
+<h3 id="v021">v0.2.1</h3>
+<ul>
+<li>Added capability to handle PlanetScope 4Band Surface Reflectance Metadata Type</li>
+<li>General Improvements</li>
+</ul>
+<h3 id="v020">v0.2.0</h3>
+<ul>
+<li>Tool improvements and enhancements</li>
+</ul>
+<h3 id="v019">v0.1.9</h3>
+<ul>
+<li>New tool EE_Report was added</li>
+</ul>
+<h3 id="v018">v0.1.8</h3>
+<ul>
+<li>Fixed issues with install</li>
+<li>Dependencies now part of setup.py</li>
+<li>Updated Parser and general improvements</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>
