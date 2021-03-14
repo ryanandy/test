@@ -27,14 +27,10 @@ jobs:
               git clone "https://earthengine.googlesource.com/users/sat-io/$val"
               cd $val
               rm -r .git
+              ls -l -a
               cd
             done
-          rm -r .git
-          ls -l -a
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git commit -m "updated datasets ${today}" -a
+          ls -R -l -a
       - name: push changes
         continue-on-error: true
         uses: ad-m/github-push-action@v0.6.0
