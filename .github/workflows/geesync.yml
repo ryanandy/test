@@ -20,9 +20,15 @@ jobs:
           eval 'set -o history' 2>/dev/null || unsetopt HIST_IGNORE_SPACE 2>/dev/null
       - name: commit files
         run: |
-          rm -r "default"
-          git clone "https://earthengine.googlesource.com/users/sat-io/default"
-          cd default
+          RepoArray=("agu2018" "Dam" "default" "terra2018")
+          today=$(date +"%Y-%m-%d")
+          for val in ${RepoArray[*]}
+            do 
+              git clone "https://earthengine.googlesource.com/users/sat-io/$val"
+              cd $val
+              rm -r .git
+              cd
+            done
           rm -r .git
           ls -l -a
           git config --local user.email "action@github.com"
