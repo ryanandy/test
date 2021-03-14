@@ -25,7 +25,8 @@ jobs:
           today=$(date +"%Y-%m-%d")
           cd $cwd
           for val in ${RepoArray[*]}
-            do 
+            do
+              if [ -d "$val" ]; then rm -Rf $val; fi
               git clone "https://earthengine.googlesource.com/users/sat-io/$val"
               cd $val
               rm -r .git
