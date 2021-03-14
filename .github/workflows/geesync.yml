@@ -21,7 +21,7 @@ jobs:
       - name: commit files
         run: |
           rm -r "default"
-          git clone "https://earthengine.googlesource.com/users/sat-io/default" temp
+          git clone "https://earthengine.googlesource.com/users/sat-io/default"
           cd default
           rm -r .git
           ls -l -a
