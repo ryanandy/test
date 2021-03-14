@@ -19,7 +19,7 @@ var water = /* color: #d63000 */ee.Geometry.Polygon(
 // The purpose of this script is to estimate sub-pixel fractions
 // of identifiable spectral "endmembers". Constrained Spectral Unmixing is then applied
 
-// Use the reflective bands.
+// Use the reflective bands for the analysis
 var bands = ['b1', 'b2', 'b3', 'b4'];
 var aoi=ee.FeatureCollection("projects/sat-io/open-ca/aoi")
 
