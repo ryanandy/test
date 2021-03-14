@@ -30,7 +30,6 @@ jobs:
               ls -l -a
               cd
             done
-          ls -R -l -a
       - name: push changes
         continue-on-error: true
         uses: ad-m/github-push-action@v0.6.0
