@@ -27,6 +27,7 @@ jobs:
               git clone "https://earthengine.googlesource.com/users/sat-io/$val"
               cd $val
               rm -r .git
+              pwd
               ls -l -a
               cd
             done
