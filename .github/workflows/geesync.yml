@@ -20,8 +20,24 @@ jobs:
           eval 'set -o history' 2>/dev/null || unsetopt HIST_IGNORE_SPACE 2>/dev/null
       - name: commit files
         run: |
-          ls -l -a
-          pwd
+          cwd=$(pwd)
+          RepoArray=("agu2018" "Dam" "default" "terra2018")
+          today=$(date +"%Y-%m-%d")
+          cd $cwd
+          for val in ${RepoArray[*]}
+            do 
+              git clone "https://earthengine.googlesource.com/users/sat-io/$val"
+              cd $val
+              rm -r .git
+              pwd
+              ls -l -a
+              cd
+            done
+          cd $cwd
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "updated datasets ${today}"
       - name: push changes
         continue-on-error: true
         uses: ad-m/github-push-action@v0.6.0
