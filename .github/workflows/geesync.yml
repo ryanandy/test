@@ -19,6 +19,7 @@ jobs:
           __END__
           eval 'set -o history' 2>/dev/null || unsetopt HIST_IGNORE_SPACE 2>/dev/null
       - name: commit files
+        continue-on-error: true
         run: |
           cwd=$(pwd)
           RepoArray=("agu2018" "Dam" "default" "terra2018")
