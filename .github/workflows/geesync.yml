@@ -20,6 +20,8 @@ jobs:
           eval 'set -o history' 2>/dev/null || unsetopt HIST_IGNORE_SPACE 2>/dev/null
       - name: commit files
         run: |
+          ls -l -a
+          cd test
           RepoArray=("agu2018" "Dam" "default" "terra2018")
           today=$(date +"%Y-%m-%d")
           for val in ${RepoArray[*]}
@@ -32,6 +34,7 @@ jobs:
               cd
             done
           cd
+          cd test
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
