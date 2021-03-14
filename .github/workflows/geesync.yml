@@ -20,7 +20,8 @@ jobs:
           eval 'set -o history' 2>/dev/null || unsetopt HIST_IGNORE_SPACE 2>/dev/null
       - name: commit files
         run: |
-          git clone "https://earthengine.googlesource.com/users/sat-io/default"
+          rm -r "default"
+          git clone "https://earthengine.googlesource.com/users/sat-io/default" temp
           cd default
           rm -r .git
           ls -l -a
